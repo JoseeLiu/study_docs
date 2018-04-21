@@ -51,13 +51,49 @@
 
 linux网络模型（阻塞、非阻塞）--ok
 模式（reactor模式等）总结--ok
-单元化、异地多活、熔断方案--ok
-字符串
+单元化、异地多活、--ok
+字符串--ok
 事务原理、间隙锁--ok
-DDD总结
+
+violate、concurrenthashmap原理--ok
+java重排序问题--ok
 各种系统信息获取--fintech-monitor代码
 	网络状态
 	线程池状态
 	流量等参考watcher指标
 	/proc树分析
+	jstat命令学习--重点
+spring、dubbo、mybatis、hibernate（对比）组件、扩展源码架构整理
+虚拟机参数分析
+/home/q/java/default/bin/java -Djava.util.logging.config.file=/home/q/www/ious.qunar.com/conf/logging.properties -Xms2048m -Xmx2048m -XX:NewSize=256m -XX:PermSize=256m -server -XX:+DisableExplicitGC -Dqunar.logs=/home/q/www/ious.qunar.com/logs -Dqunar.cache=/home/q/www/ious.qunar.com/cache -verbose:gc -XX:+PrintGCDateStamps -XX:+PrintGCDetails -Xloggc:/home/q/www/ious.qunar.com/logs/gc.log -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.endorsed.dirs=/home/q/tomcat/endorsed -classpath /home/q/tomcat/bin/bootstrap.jar -Dcatalina.base=/home/q/www/ious.qunar.com -Dcatalina.home=/home/q/tomcat -Djava.io.tmpdir=/home/q/www/ious.qunar.com/temp org.apache.catalina.startup.Bootstrap start
+简历写
+
+
+
+
+java concurrent包
+jdk各个包内容
+DDD总结
 设计模式文章
+熔断方案
+操作系统、TCP/IP、http、linux网络模型（阻塞、非阻塞）
+排序算法练习
+红黑树、B树插入
+
+redis集群方案--ok
+	cluster：用一个卫兵，比如zookeeper保存各台机器之间的分布式关系
+	p2p:redis节点之间彼此知道分布式集群关系，比如n个机器组成集群，以及每台机器的slave等
+lock syncornized区别--ok
+volatile--ok
+	thread的各个方法
+粘包问题解决--ok
+	通过固定长度、拆分头体，并在头中告知体长度、通过分隔符限定等
+DDOS攻击
+数据库事务实现、隔离级别实现、锁实现、索引类型、索引原理
+	https://blog.csdn.net/matt8/article/details/53096405
+设计模式
+	单例模式-多线程问题
+	其他模式review
+算法
+	https://github.com/awangdev/LintCode
+spring、dubbo源码
